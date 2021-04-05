@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <title>SciDroid - [snippet</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">SciDroid</a></h1>
+                <nav><ul>
+                    <li><a href="/category/code.html">Code</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/my-first-blogpost-is-a-code-snippet.html">My first blogpost is a code snippet</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2020-12-25T22:45:00-05:00">
+                Published: vie 25 diciembre 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/scidroid.html">SciDroid</a>
+        </address>
+<p>In <a href="/category/code.html">Code</a>.</p>
+<p>tags: <a href="/tag/snippet.html">[snippet</a> <a href="/tag/python.html">python]</a> </p>
+</footer><!-- /.post-info --><h2>Information</h2>
+<p>This is the first blogpost in Yo  Hago Tech my personal blog of tech and other interesting things, in this blogpost i go to publish a random code snippet of my gist profile.</p>
+<p><img alt="My Gist Profile" src="https://yohago.tech/assets/img/sample/gist.png"> <em>Gist Profile</em></p>
+<h2>Snippet</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># importa la librería time que permite trabajar con la fecha y hora del sistema</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+
+<span class="c1"># Pregunta cuantas veces se quiere repetir el proceso.</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese cuantas veces quiere repetir el proceso: &quot;</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># Habilita el ciclo While</span>
+
+    <span class="c1"># Pide el valor a calcular al Usuario</span>
+    <span class="n">valor</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese el monto de dinero a calcular: &quot;</span><span class="p">))</span>
+
+    <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+
+    <span class="k">if</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">50000</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># Imprime la condición del billete de 50 mil</span>
+        <span class="n">billetes_de_50</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">50000</span>
+        <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">%</span> <span class="mi">50000</span>
+        <span class="c1"># Imprime los billetes de 50 mil</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Billetes de 50 mil: </span><span class="si">{</span><span class="n">billetes_de_50</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Para que se espere 2 segundo y despues imprima el siguiente billete</span>
+
+    <span class="k">if</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">20000</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># Imprime la condición del billete de 20 mil</span>
+        <span class="n">billetes_de_20</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">20000</span>
+        <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">%</span> <span class="mi">20000</span>
+        <span class="c1"># Imprime los billetes de 20 mil</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Billetes de 20 mil: </span><span class="si">{</span><span class="n">billetes_de_20</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Para que se espere 2 segundo y despues imprima el siguiente billete</span>
+
+    <span class="k">if</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">10000</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># Imprime la condición del billete de 10 mil</span>
+        <span class="n">billetes_de_10</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">10000</span>
+        <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">%</span> <span class="mi">10000</span>
+        <span class="c1"># Imprime los billetes de 10 mil</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Billetes de 10 mil: </span><span class="si">{</span><span class="n">billetes_de_10</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Para que se espere 2 segundo y despues imprima el siguiente billete</span>
+
+    <span class="k">if</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">5000</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># Imprime la condición del billete de 5 mil</span>
+        <span class="n">billetes_de_5</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">5000</span>
+        <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">%</span> <span class="mi">5000</span>
+        <span class="c1"># Imprime los billetes de 5 mil</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Billetes de 5 mil: </span><span class="si">{</span><span class="n">billetes_de_5</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Para que se espere 2 segundo y despues imprima el siguiente billete</span>
+
+    <span class="k">if</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">2000</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># Imprime la condición del billete de 2 mil</span>
+        <span class="n">billetes_de_2</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">2000</span>
+        <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">%</span> <span class="mi">2000</span>
+        <span class="c1"># Imprime los billetes de 2 mil</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Billetes de 2 mil: </span><span class="si">{</span><span class="n">billetes_de_2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Para que se espere 2 segundo y despues imprima el siguiente billete</span>
+
+    <span class="k">if</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">1000</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># Imprime la condición del billete de mil</span>
+        <span class="n">billetes_de_1</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">//</span> <span class="mi">1000</span>
+        <span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span> <span class="o">%</span> <span class="mi">1000</span>
+        <span class="c1"># Imprime los billetes de mil</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Billetes de mil: </span><span class="si">{</span><span class="n">billetes_de_1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Para que se espere 2 segundo y despues imprima el siguiente billete</span>
+
+    <span class="k">if</span> <span class="n">valor</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Quedan </span><span class="si">{</span><span class="n">valor</span><span class="si">}</span><span class="s2"> colones.&quot;</span><span class="p">)</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Thanks for reading.</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
