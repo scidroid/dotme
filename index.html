@@ -87,7 +87,7 @@
       <hr />
       <section id="blog">
         <h2>Blog</h2>
-        <h3 id="blog-subtitle">Coming soon</h3>
+        <h3 id="blog-subtitle">Read interestings articles</h3>
         <div class="box-containers">
           <article id="blog-1">
             <h4>Aprendiendo en Platzi</h4>
@@ -99,7 +99,11 @@
             >
           </article>
           <article id="blog-2">
-            <h4>Learning to code in Python</h4>
+            <h4>
+              <a href="https://yohago.tech/posts/learning-to-code-in-python/"
+                >Learning to code in Python</a
+              >
+            </h4>
             <span
               >Learn to program in Python, a high-level, interpreted,
               multi-paradigm language used for Web with Flask and Django,
@@ -107,7 +111,11 @@
             >
           </article>
           <article id="blog-3">
-            <h4>Our economy works with sand</h4>
+            <h4>
+              <a href="https://yohago.tech/posts/our-economy-works-with-sand/"
+                >Our economy works with sand</a
+              >
+            </h4>
             <span
               >Yes, although it seems incredible what I am saying, our economy
               works with sand. well, not exactly, it is a component of sand
@@ -122,7 +130,7 @@
             value="More posts
           "
             role="link"
-            onclick="window.location='https://scidroid.me/blog'"
+            onclick="window.location='https://yohago.tech/'"
           >
             More posts
           </button>
@@ -132,26 +140,28 @@
       <section id="news">
         <h2>Newsletter</h2>
         <h3>SPAM free</h3>
-        <form action="https://api.scidroid.me/add/newsletter" method="post">
-          <div class="form-input">
-            <label for="email">
-              <span>Insert Your Email</span>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                autocomplete="email"
-                placeholder="scidroid@scidroid.me"
-              />
-            </label>
-          </div>
-          <div class="button-container">
-            <button class="buttons" type="submit" name="submit" id="submit">
-              submit
-            </button>
-          </div>
-        </form>
+        <div class="form-news">
+          <form action="https://api.scidroid.me/add/newsletter" method="post">
+            <div class="form-input">
+              <label for="emailnews">
+                <span>Insert Your Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  id="emailnews"
+                  required
+                  autocomplete="email"
+                  placeholder="scidroid@scidroid.me"
+                />
+              </label>
+            </div>
+            <div class="button-container">
+              <button class="buttons" type="submit" name="submit" id="submit">
+                submit
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
       <hr />
       <section id="projects">
@@ -193,16 +203,18 @@
           <article class="blog-3">
             <div class="images-container">
               <img
-                src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.com%2Fassets%2Fupload%2Fimages%2F8%2F20190629113654_Elektor-Under-Construction.png"
-                alt="Under Construction"
+                src="https://i.loli.net/2021/04/28/6oMj7yGEgdxJ8qc.png"
+                alt="Weather App"
               />
             </div>
             <hr />
-            <h4>fullchat</h4>
+            <h4>
+              <a href="https://scidroid.github.io/weather">Weather App</a>
+            </h4>
             <div class="xd">
               <span>
-                A global chat with username maked using Python And Django,
-                MongoDB, Sockets and HTML and CSS
+                A simple weather app using JS vanilla DOM manipulation and Open
+                Weather Map API.
               </span>
             </div>
           </article>
@@ -223,45 +235,47 @@
       <section id="touch">
         <h2>Get In Touch</h2>
         <h3>Contact me for awesome things</h3>
-        <form action="https://api.scidroid.me/add/msg" method="post">
-          <div class="basic-labels">
-            <label for="name">
-              <span>Name</span>
+        <div class="form-get">
+          <form action="https://api.scidroid.me/add/msg" method="post">
+            <div class="basic-labels">
+              <label for="name">
+                <span>Name</span>
+                <br />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  placeholder="Juan"
+                />
+              </label>
               <br />
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                autocomplete="name"
-                placeholder="Juan"
-              />
-            </label>
-            <br />
-            <label for="email">
-              <span>Email</span>
+              <label for="email">
+                <span>Email</span>
+                <br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="scidroid@scidroid.me"
+                />
+              </label>
+            </div>
+            <label for="msg">
+              <span>Message</span>
               <br />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                autocomplete="email"
-                placeholder="scidroid@scidroid.me"
-              />
+              <input type="text" id="msg" name="msg" required />
             </label>
-          </div>
-          <label for="msg">
-            <span>Message</span>
-            <br />
-            <input type="text" id="msg" name="msg" required />
-          </label>
-          <div class="button-container">
-            <button class="buttons" type="submit" name="submit" id="submit">
-              submit
-            </button>
-          </div>
-        </form>
+            <div class="button-container">
+              <button class="buttons" type="submit" name="submit" id="submit">
+                submit
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
       <hr />
       <section id="contact">
@@ -286,7 +300,11 @@
       <p>Copyright (c) 2021 Copyright SciDroid All Rights Reserved.</p>
     </footer>
     <!-- Cloudflare Web Analytics -->
-    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "073e8fabbecc4fb0ad4811483e163ae9"}'></script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "073e8fabbecc4fb0ad4811483e163ae9"}'
+    ></script>
     <!-- End Cloudflare Web Analytics -->
   </body>
 </html>

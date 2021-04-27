@@ -151,11 +151,14 @@ header a {
   text-align: center;
   padding-bottom: 15px;
   margin: 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
 #blog {
   padding: 10px;
   background-color: var(--secondary-color);
+  justify-content: center;
 }
 
 #blog h2 {
@@ -176,6 +179,7 @@ header a {
 .box-containers {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #blog article {
@@ -186,6 +190,8 @@ header a {
 }
 
 #blog article h4 {
+  max-width: 300px;
+  margin: auto;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 5px;
@@ -194,6 +200,8 @@ header a {
 }
 
 #blog article span {
+  max-width: 290px;
+  margin: auto;
   font-size: 1.2rem;
   color: var(--quartenary-color);
   font-family: var(--secondary-font);
@@ -374,6 +382,12 @@ header a {
   color: var(--terceary-color);
   text-decoration: none;
 }
+.form-get, .form-news {
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 footer {
   background-color: var(--quartenary-color);
@@ -384,6 +398,11 @@ footer {
 }
 
 @media (min-width: 400px) {
+  .box-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   #about p {
     font-size: 1.7rem;
   }
@@ -397,7 +416,7 @@ footer {
     width: 400px;
     height: 300px;
   }
-  @media (max-width: 979px;) {
+  @media (max-width: 979px) {
     #touch label span {
       display: inline-block;
       text-align: center;
@@ -462,10 +481,15 @@ footer {
   padding: 5px;
   border-radius: 5px;
   border: 0.2px var(--quartenary-color) solid;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 @media (min-width: 980px) {
+  .box-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   #about p {
     font-size: 1.9rem;
   }
