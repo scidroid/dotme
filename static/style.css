@@ -1,0 +1,163 @@
+:root {
+  --h-font: Oswald, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #fff9f0;
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3rem;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2rem;
+  padding-right: 0.05rem;
+  padding-bottom: 0.1rem;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1rem;
+}
+
+header,
+main,
+footer {
+  width: 80vw;
+  max-width: 600px;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  font-family: var(--h-font);
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--h-font);
+  font-size: 8rem;
+}
+
+header h2 {
+  text-align: center;
+  font-family: var(--h-font);
+  font-size: 2rem;
+}
+
+hr {
+  min-width: 80vw;
+  margin: auto auto;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 10px;
+  font-family: var(--h-font);
+}
+
+p {
+  font-family: var(--h-font);
+  font-size: 2rem;
+  margin: 20px;
+  text-align: center;
+}
+
+h3,
+h3 a {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+}
+
+.revue-form-group,
+.revue-form-actions {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 2rem;
+  font-family: var(--h-font);
+  margin: auto auto;
+}
+
+input {
+  font-size: 2rem;
+  width: 60vw;
+  max-width: 500px;
+  font-family: var(--h-font);
+  margin: auto auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+section img {
+  margin: auto auto;
+  padding: 10px;
+}
+
+.buttons {
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  margin: 15px;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+#gh,
+#dv,
+#em {
+  border: black solid 1px;
+  color: black;
+}
+
+#tw {
+  border: aqua solid 1px;
+  color: aqua;
+}
+
+@media (min-width: 600px) {
+  img {
+    width: 550px;
+    height: 450px;
+  }
+}

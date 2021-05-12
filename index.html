@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://link.scidroid.me/avatar.png" />
+    <link rel="stylesheet" href="static/style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway:800&display=swap"
+      href="https://fonts.googleapis.com/css?family=Oswald:400&display=swap"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Lora:400italic&display=swap"
+      href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap"
       rel="stylesheet"
       type="text/css"
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <title>SciDroid - HomePage</title>
-    <link rel="stylesheet" href="./static/main.css" />
-    <link rel="icon" href="./static/avatar.png" />
-    <meta property="og:url" content="https://scidroid.me/" />
+    <title>SciDroid's Home</title>
+        <meta property="og:url" content="https://scidroid.me/" />
     <meta property="og:title" content="SciDroid" />
     <meta
       name="og:description"
@@ -51,260 +51,223 @@
     <meta property="og:image" content="assets/img/avatar.jpg" />
     <meta name="twitter:title" content="Scidroid's WebPage" />
   </head>
-
   <body>
     <header>
-      <h1>SciDroid</h1>
-      <div class="container">
-        <a href="#about">
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div
-        ></a>
-      </div>
-    </header>
-    <main>
-      <section id="about">
-        <br />
-        <h2>About Me</h2>
-        <p>
-          Hi, my name is Juan, a 13 years dev from Colombia, I became more
-          interested in programming in December 2020 and I'm passionate about
-          software development, my favorite language is Python, although I have
-          experimented and worked with JavaScript, HTML and CSS and a bit of
-          Ruby, Java and C.
-        </p>
-        <p>
-          My first line of code was done at
-          <a href="https://code.org/">Hour Of Code</a>&nbsp;, since then I have
-          been involved and interested in interesting technologies like backend
-          programming, artificial intelligence and a few other things, I have
-          also had the opportunity to teach other people which has given me a
-          lot of fun and learning.
-        </p>
-        <br />
-      </section>
-      <hr />
-      <section id="blog">
-        <h2>Blog</h2>
-        <h3 id="blog-subtitle">Read interestings articles</h3>
-        <div class="box-containers">
-          <article id="blog-1">
-            <h4>Aprendiendo en Platzi</h4>
-            <span
-              >En este post voy a contar mi experiencia en Platzi y en este reto
-              llamado Road To Code 2.0 en el que aprendí lo basico de Front y
-              con el cual logré construir la Web que ahora mismo estás
-              leyendo.</span
-            >
-          </article>
-          <article id="blog-2">
-            <h4>
-              <a href="https://yohago.tech/posts/learning-to-code-in-python/"
-                >Learning to code in Python</a
-              >
-            </h4>
-            <span
-              >Learn to program in Python, a high-level, interpreted,
-              multi-paradigm language used for Web with Flask and Django,
-              Artificial Intelligence and Data Science.</span
-            >
-          </article>
-          <article id="blog-3">
-            <h4>
-              <a href="https://yohago.tech/posts/our-economy-works-with-sand/"
-                >Our economy works with sand</a
-              >
-            </h4>
-            <span
-              >Yes, although it seems incredible what I am saying, our economy
-              works with sand. well, not exactly, it is a component of sand
-              called silicon.</span
-            >
-          </article>
-        </div>
-        <div class="button-container">
-          <button
-            class="buttons"
-            type="button"
-            value="More posts
-          "
-            role="link"
-            onclick="window.location='https://yohago.tech/'"
-          >
-            More posts
-          </button>
-        </div>
-      </section>
-      <hr />
-      <section id="news">
-        <h2>Newsletter</h2>
-        <h3>SPAM free</h3>
-        <div class="form-news">
-          <form action="https://api.scidroid.me/add/newsletter" method="post">
-            <div class="form-input">
-              <label for="emailnews">
-                <span>Insert Your Email</span>
-                <input
-                  type="email"
-                  name="email"
-                  id="emailnews"
-                  required
-                  autocomplete="email"
-                  placeholder="scidroid@scidroid.me"
-                />
-              </label>
-            </div>
-            <div class="button-container">
-              <button class="buttons" type="submit" name="submit" id="submit">
-                submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <hr />
-      <section id="projects">
-        <h2>Projects</h2>
-        <h3>My code are shitty, but works</h3>
-        <div class="box-containers">
-          <article class="blog-1">
-            <div class="images-container">
-              <img
-                src="https://i.loli.net/2021/04/21/LIru1FQC2VvKcUb.png"
-                alt="This Website"
-              />
-            </div>
-            <hr />
-            <h4>Website</h4>
-            <div class="xd">
-              <span>
-                My personal website and blog maked whit HTML, CSS and Python
-                using Pelican.
-              </span>
-            </div>
-          </article>
-          <article class="blog-2">
-            <div class="images-container">
-              <img
-                src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.com%2Fassets%2Fupload%2Fimages%2F8%2F20190629113654_Elektor-Under-Construction.png"
-                alt="Under Construction"
-              />
-            </div>
-            <hr />
-            <h4>Voting</h4>
-            <div class="xd">
-              <span>
-                Voting is a simple vote system with autentification, maked with
-                HTML, CSS, Python, Flask and MySQL
-              </span>
-            </div>
-          </article>
-          <article class="blog-3">
-            <div class="images-container">
-              <img
-                src="https://i.loli.net/2021/04/28/6oMj7yGEgdxJ8qc.png"
-                alt="Weather App"
-              />
-            </div>
-            <hr />
-            <h4>
-              <a href="https://scidroid.github.io/weather">Weather App</a>
-            </h4>
-            <div class="xd">
-              <span>
-                A simple weather app using JS vanilla DOM manipulation and Open
-                Weather Map API.
-              </span>
-            </div>
-          </article>
-        </div>
-        <div class="button-container">
-          <button
-            class="buttons"
-            type="button"
-            value="More projects"
-            role="link"
-            onclick="window.location='https://github.com/scidroid'"
-          >
-            More Projects
-          </button>
-        </div>
-      </section>
-      <hr />
-      <section id="touch">
-        <h2>Get In Touch</h2>
-        <h3>Contact me for awesome things</h3>
-        <div class="form-get">
-          <form action="https://api.scidroid.me/add/msg" method="post">
-            <div class="basic-labels">
-              <label for="name">
-                <span>Name</span>
-                <br />
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  autocomplete="name"
-                  placeholder="Juan"
-                />
-              </label>
-              <br />
-              <label for="email">
-                <span>Email</span>
-                <br />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  autocomplete="email"
-                  placeholder="scidroid@scidroid.me"
-                />
-              </label>
-            </div>
-            <label for="msg">
-              <span>Message</span>
-              <br />
-              <input type="text" id="msg" name="msg" required />
-            </label>
-            <div class="button-container">
-              <button class="buttons" type="submit" name="submit" id="submit">
-                submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <hr />
-      <section id="contact">
-        <h2>Social Media</h2>
-        <h3>You also can contact me on this channels</h3>
+      <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters">SciDroid</span>
+        </span>
+      </h1>
+      <h2>Web Dev and Data Scientist in progress</h2>
+      <nav>
         <ul>
-          <li>
-            <i class="fab fa-twitter"></i
-            ><a href="https://twitter.com/scidroid">Twitter</a>
-          </li>
-          <li>
-            <i class="fab fa-github"></i
-            ><a href="https://github.com/scidroid">GitHub</a>
-          </li>
-          <li>
-            <i class="fab fa-dev"></i><a href="https://dev.to/scidroid">Dev</a>
-          </li>
+          <li><a href="https://scidroid.me/">Home</a></li>
+          <li><a href="https://yohago.tech/">Blog</a></li>
+          <li><a href="https://github.com/scidroid/dotme">Source Code</a></li>
         </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <h2>About Me</h2>
+      <p>
+        Hi, my name is Juan, a 13 years dev from Colombia, I became more
+        interested in programming in December 2020 and I'm passionate about
+        software development, my favorite language is Python, although I have
+        experimented and worked with JavaScript, HTML and CSS and a bit of Ruby,
+        Java and C.
+      </p>
+      <p>
+        My first line of code was done at
+        <a href="https://code.org/">Hour Of Code</a>, since then I have been
+        involved and interested in interesting technologies like backend
+        programming, artificial intelligence, Data Science and a few other
+        things, I have also had the opportunity to teach other people which has
+        given me a lot of fun and learning.
+      </p>
+      <h2>Blog</h2>
+      <section>
+        <h3>
+          <a href="https://yohago.tech/posts/learning-to-code-in-python/"
+            >Learning to code in Python</a
+          >
+        </h3>
+        <p>
+          Python is a widely-used, interpreted, object-oriented, and high-level
+          programming language with dynamic semantics, used for general-purpose
+          programming. It was created by Guido van Rossum, and first released on
+          February 20, 1991.
+        </p>
       </section>
+      <section>
+        <h3>
+          <a href="https://yohago.tech/posts/our-economy-works-with-sand/"
+            >Our economy works with sand</a
+          >
+        </h3>
+        <p>
+          Yes, although it seems incredible what I am saying our economy works
+          with sand. well, not exactly, it is a component of sand called
+          silicon. Silicon is the most abundant chemical element in the world,
+          this is formed in the megastars when tw...
+        </p>
+      </section>
+      <section>
+        <h3>
+          <a
+            href="https://yohago.tech/posts/my-first-blogpost-is-a-code-snippet/"
+            >My first blogpost is a code snippet</a
+          >
+        </h3>
+        <p>
+          This is the first blogpost in Yo Hago Tech my personal blog of tech
+          and other interesting things, in this blogpost i go to publish a
+          random code snippet of my gist profile.
+        </p>
+      </section>
+      <h3><a href="https://yohago.tech/">All Posts</a></h3>
+      <h2>Newsletter</h2>
+      <div id="revue-embed">
+        <form
+          action="http://r.scidroid.me/add_subscriber"
+          method="post"
+          id="revue-form"
+          name="revue-form"
+          target="_blank"
+        >
+          <div class="form-container">
+            <div class="revue-form-group">
+              <label for="member_email">Email address</label>
+              <input
+                class="revue-form-field"
+                placeholder="Your email address..."
+                type="email"
+                name="member[email]"
+                id="member_email"
+              />
+            </div>
+            <div class="revue-form-group">
+              <label for="member_first_name"
+                >First name <span class="optional">(Optional)</span></label
+              >
+              <input
+                class="revue-form-field"
+                placeholder="First name... (Optional)"
+                type="text"
+                name="member[first_name]"
+                id="member_first_name"
+              />
+            </div>
+            <div class="revue-form-group">
+              <label for="member_last_name"
+                >Last name <span class="optional">(Optional)</span></label
+              >
+              <input
+                class="revue-form-field"
+                placeholder="Last name... (Optional)"
+                type="text"
+                name="member[last_name]"
+                id="member_last_name"
+              />
+            </div>
+            <div class="revue-form-actions">
+              <input
+                type="submit"
+                value="Subscribe"
+                name="member[subscribe]"
+                id="member_submit"
+              />
+            </div>
+          </div>
+          <div class="revue-form-footer">
+            <p>
+              By subscribing, you agree with Revue’s
+              <a target="_blank" href="https://www.getrevue.co/terms">Terms</a>
+              and
+              <a target="_blank" href="https://www.getrevue.co/privacy"
+                >Privacy Policy</a
+              >.
+            </p>
+          </div>
+        </form>
+      </div>
+      <h2>Projects</h2>
+      <section>
+        <img width="300" height="200" src="static/google.png" alt="Google Clone" />
+        <h3><a href="https://google.scidroid.me/">Google Clone</a></h3>
+        <p>A google Clone with HTML, CSS and JS vanilla.</p>
+      </section>
+      <section>
+        <img
+          width="300"
+          height="200"
+          src="static/retro-landing.png"
+          alt="Retro Landing"
+        />
+        <h3>
+          <a href="https://scidroid.github.io/retrolanding"
+            >Retro Gamers Landing</a
+          >
+        </h3>
+        <p>A retro landing page using nes.css and HTML.</p>
+      </section>
+      <section>
+        <img width="300" height="200" src="static/weather.png" alt="Weather App" />
+        <h3><a href="https://scidroid.github.io/weather">Weather App</a></h3>
+        <p>
+          A weather app using the Open Weather App API, and DOM manipulation
+          with JS vanilla.
+        </p>
+      </section>
+      <h3><a href="https://github.com/scidroid">Other Projects</a></h3>
+      <h2>Links</h2>
+      <a class="buttons" id="gh" href="https://github.com/scidroid"
+        ><i class="fab fa-github"></i> GitHub</a
+      >
+      <a class="buttons" id="dv" href="https://dev.to/scidroid"
+        ><i class="fab fa-dev"></i> Dev.To</a
+      >
+      <a class="buttons" id="tw" href="https://twitter.com/scidroid"
+        ><i class="fab fa-twitter"></i> Twitter</a
+      >
+      <a class="buttons" id="em" href="mailto:scidroid@scidroid.me"
+        ><i class="far fa-envelope"></i> Email</a
+      >
     </main>
     <footer>
-      <p>Copyright (c) 2021 Copyright SciDroid All Rights Reserved.</p>
+      <p>
+        A website and Blog by SciDroid under MIT license. Built with HTML, CSS, JS and Revue.
+      </p>
     </footer>
-    <!-- Cloudflare Web Analytics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      var textWrapper = document.querySelector(".ml6 .letters");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: false })
+        .add({
+          targets: ".ml6 .letter",
+          translateY: ["3rem", 0],
+          translateZ: 0,
+          duration: 750,
+          delay: (el, i) => 50 * i,
+        })
+        .add({
+          targets: ".ml6",
+          opacity: 0,
+          duration: Infinity,
+          easing: "easeOutExpo",
+          delay: 1000,
+        });
+    </script>
     <script
       defer
       src="https://static.cloudflareinsights.com/beacon.min.js"
       data-cf-beacon='{"token": "073e8fabbecc4fb0ad4811483e163ae9"}'
     ></script>
-    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>
