@@ -3,7 +3,7 @@ import"./style.css"
 import "tailwindcss/tailwind.css"
 
 const app = new App({
-  target: document.querySelector("main"),
+  target: document.querySelector("body"),
   props: {
     name: "SciDroid's WebSite",
   },
