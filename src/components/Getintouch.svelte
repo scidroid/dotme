@@ -1,5 +1,5 @@
 <h2>Get In Touch</h2>
-<form name="getintouch" netlify>
+<form name="getintouch" method="POST" netlify>
     <label for="name">Name</label>
     <input
         type="text"
