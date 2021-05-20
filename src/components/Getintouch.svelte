@@ -1,5 +1,5 @@
 <h2>Get In Touch</h2>
-<form name="getintouch" method="POST" netlify>
+<form name="getintouch" action="https://scidroid.pythonanywhere.com/add/msg" method="POST">
     <label for="name">Name</label>
     <input
         type="text"
@@ -18,11 +18,11 @@
         placeholder="scidroid@scidroid.me"
         required
     />
-    <label for="message">Message</label>
+    <label for="msg">Message</label>
     <input
         type="text"
-        name="message"
-        id="message"
+        name="msg"
+        id="msg"
         placeholder="Hi, ..."
         required
     />
