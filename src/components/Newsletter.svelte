@@ -1,6 +1,6 @@
 <h2>NewsLetter</h2>
 <div id="revue-embed">
-    <form action="http://r.scidroid.me/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+    <form action="https://r.scidroid.me/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
     <div class="revue-form-group">
       <label for="member_email">Email address</label>
       <input class="revue-form-field" placeholder="Your email address..." type="email" name="member[email]" id="member_email">
