@@ -1,44 +1,30 @@
-<header class="flex p-4">
-    <h1>
-        <a class="font-normal text-3xl" href="https://scidroid.me/">SciDroid</a>
+<header class="flex p-2">
+    <h1 class="text-xl">
+        <a
+            class="font text-light-blue-600 font-semibold"
+            style="
+                box-shadow: rgb(255, 255, 255) 0px -0.166667em 0px 0px inset,
+                    rgb(186, 230, 253) 0px -0.333333em 0px 0px inset;
+            "
+            href="https://scidroid.me/"
+            >SciDroid</a
+        >
     </h1>
-    <nav class="flex justify-around">
+    <nav class="p-1">
         <ul class="flex">
             <li>
                 <a
-                    class="text-lg font-light p-2"
+                    class="text-xl font-normal p-1"
                     href="https://scidroid.me/posts"
                     >Posts</a
                 >
             </li>
             <li>
                 <a
-                    class="text-lg font-light p-2"
+                    class="text-xl font-normal p-1"
                     href="https://scidroid.me/projects"
                     >Projects</a
                 >
-            </li>
-        </ul>
-        <ul class="flex">
-            <li>
-                <a class="p-2" href="https://dev.to/scidroid"
-                    ><i class="fab fa-dev"></i
-                ></a>
-            </li>
-            <li>
-                <a class="p-2" href="https://github.com/scidroid"
-                    ><i class="fab fa-github"></i
-                ></a>
-            </li>
-            <li>
-                <a class="p-2" href="https://twitter.com/scidroid"
-                    ><i class="fab fa-twitter"></i
-                ></a>
-            </li>
-            <li>
-                <a class="p-2" href="mailto:scidroid@scidroid.me"
-                    ><i class="far fa-envelope"></i
-                ></a>
             </li>
         </ul>
     </nav>
