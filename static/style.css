@@ -134,25 +134,18 @@ section img {
   padding: 10px;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .buttons {
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-  margin: 15px;
-  text-decoration: none;
   font-size: 3rem;
-}
-
-#gh,
-#dv,
-#em {
-  border: black solid 1px;
+  text-align: center;
+  border-radius: 20%;
+  padding: 10px;
+  text-decoration: none;
   color: black;
-}
-
-#tw {
-  border: aqua solid 1px;
-  color: aqua;
 }
 
 @media (min-width: 600px) {
