@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://link.scidroid.me/avatar.png" />
+    <link rel="stylesheet" href="static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>SciDroid's Home</title>
+    <meta property="og:url" content="https://scidroid.me/" />
+    <meta property="og:title" content="SciDroid" />
+    <meta
+      name="og:description"
+      content="I am a junior python developer, who is passionate about development and is learning to be better and better."
+    />
+    <meta
+      name="twitter:description"
+      content="I am an junior python developer, who is passionate about development and is learning to be better and better."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="I am an junior python developer, who is passionate about development and is learning to be better and better."
+    />
+    <meta property="og:image" content="assets/img/avatar.jpg" />
+    <meta
+      property="og:image"
+      content="https://r.8b.io/185860/images/mbr-h_kfe5zfhm-1076x1614.jpg"
+    />
+    <meta
+      name="description"
+      content="I am an junior python developer, who is passionate about development and is learning to be better and better."
+    />
+    <meta property="og:image" content="assets/img/avatar.jpg" />
+    <meta name="twitter:title" content="Scidroid's WebPage" />
+  </head>
+  <body>
+    <header>
+      <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters">SciDroid</span>
+        </span>
+      </h1>
+      <h2>Web Dev and Data Scientist in progress</h2>
+      <nav>
+        <ul>
+          <li><a href="https://scidroid.me/">Home</a></li>
+          <li><a href="https://yohago.tech/">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <h2>You seem to be lost.</h2>
+      <p>
+        <a href="https://scidroid.me/">Click here</a> to go back to the home page where you can see some of my
+        projects and contact me, or <a href="https://dev.to/scidroid">click here</a> to go to my blog.
+      </p>
+      <p>My other links</p>
+      <div class="button-container">
+        <a class="buttons" id="gh" href="https://github.com/scidroid"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a class="buttons" id="dv" href="https://dev.to/scidroid"
+          ><i class="fab fa-dev"></i> Dev.To</a
+        >
+        <a class="buttons" id="tw" href="https://twitter.com/scidroid"
+          ><i class="fab fa-twitter"></i> Twitter</a
+        >
+        <a class="buttons" id="em" href="mailto:scidroid@scidroid.me"
+          ><i class="far fa-envelope"></i> Email</a
+        >
+      </div>
+    </main>
+    <footer>
+      <p>
+        A website by SciDroid under MIT license. Built with HTML, CSS, JS and
+        Revue. <a href="https://github.com/scidroid/dotme">Source Code</a>
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      var textWrapper = document.querySelector(".ml6 .letters");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: false })
+        .add({
+          targets: ".ml6 .letter",
+          translateY: ["3rem", 0],
+          translateZ: 0,
+          duration: 750,
+          delay: (el, i) => 50 * i,
+        })
+        .add({
+          targets: ".ml6",
+          opacity: 0,
+          duration: Infinity,
+          easing: "easeOutExpo",
+          delay: 1000,
+        });
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "073e8fabbecc4fb0ad4811483e163ae9"}'
+    ></script>
+  </body>
+</html>
