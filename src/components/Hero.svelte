@@ -1,7 +1,3 @@
-<script>
-    let src = "../public/static/bust.png";
-</script>
-
 <section class="hero p-3 rounded-sm border-gray-400">
     <div class="flex container-hero">
         <h2
