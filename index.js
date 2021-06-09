@@ -10,7 +10,7 @@ const addElement = (title, description, url) => {
 fetch("https://dev.to/api/articles?username=scidroid")
   .then(resp => resp.json())
   .then((resp) => {
-    for (let index = 0; index < resp.length; index++) {
+    for (let index = 0; index < resp.length || index > 4; index++) {
       addElement(resp[index].title, resp[index].description, resp[index].url);
     }
   })
